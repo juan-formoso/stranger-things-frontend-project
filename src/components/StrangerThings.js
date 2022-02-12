@@ -18,7 +18,7 @@ const upsideDownConfig = {
 
 const charactersService = new CharactersService(strangerThingsConfig);
 const charactersUpsideDownService = new CharactersService(upsideDownConfig);
-/* const onDevelopment = process.env.REACT_APP_MESSAGE; */
+const onDevelopment = process.env.REACT_APP_MESSAGE;
 
 class StrangerThings extends React.Component {
   constructor(props) {
@@ -145,6 +145,7 @@ class StrangerThings extends React.Component {
             <button type="button" onClick={ this.previousPage }>Anterior</button>
             <button type="button" onClick={ this.nextPage }>Próximo</button>
           </div>
+          <p>{onDevelopment}</p>
         </div>
       </div>
     );
